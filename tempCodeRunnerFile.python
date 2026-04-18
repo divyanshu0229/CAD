@@ -1,0 +1,14 @@
+size = 4
+queue = [None]*4
+front=-1
+rear=-1
+for i in range (size+1):
+    var = int(input("enter element"))
+    if (rear+1)%size==front:
+         print("over flow")
+    else:
+     if front==-1:
+        front=0
+        rear=(rear+1)%size
+        print("after insertion",queue)
+        print(queue)
